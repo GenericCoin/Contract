@@ -666,7 +666,7 @@ contract Consts {
     string public constant TOKEN_NAME = "GENERICCOIN";
     string public constant TOKEN_SYMBOL = "GCOIN";
     bool public constant PAUSED = false;
-    address public constant TARGET_USER = 0x68FF25d05A2eC27a71AB8928E22D2460c91022Ad;
+    address public constant TARGET_USER = 0x76cdD6e8BE610BC0DfB43617f9419b851EDA5841;
     
     bool public constant CONTINUE_MINTING = true;
 }
@@ -719,9 +719,9 @@ contract MainToken is Consts, FreezableMintableToken, BurnableToken, Pausable
         }
 
         
-        address[4] memory addresses = [address(0x389ca3608ff62e8898e058bd2f303cc31964754d),address(0x2386f788922ef7d9929311475becd987c7490d2b),address(0x5d144258f7074a2f622ed349381ab80c99d4c452),address(0x12b362d7b709b18dd4a2f613a79f0ad88bd966b2)];
+        address[4] memory addresses = [address(0x18A4e8Dc0124EB6eEaD6f1C21437a1F30Cd22E98),address(0x25F0288fF18c74b484c173eFFd487025ef55Da79),address(0x55aee70Eb07886c6a1F0dC46bDBf57D89D2F8c66),address(0x98B46cc42F0ccdf167980BA8bB8d15C88E68DE75)];
         uint[4] memory amounts = [uint(5000000000000000000),uint(5000000000000000000),uint(45000000000000000000),uint(45000000000000000000)];
-        uint64[4] memory freezes = [uint64(0),uint64(1648702801),uint64(0),uint64(0)];
+        uint64[4] memory freezes = [uint64(0),uint64(0),uint64(0),uint64(0)];
 
         for (uint i = 0; i < addresses.length; i++) {
             if (freezes[i] == 0) {
